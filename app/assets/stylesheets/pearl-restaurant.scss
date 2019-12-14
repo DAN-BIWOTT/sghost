@@ -1,0 +1,327 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Pearl Restaurant
+Version:	1.0
+Last change:	Initial RELEASED 
+Primary use:	Restaurant and Hotel
+-------------------------------------------------------------------*/
+
+/* google font */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300);
+@import url(https://fonts.googleapis.com/css?family=Tangerine:400,700);
+
+
+/*------------------------------------------------------------------
+
+[Table of contents]
+
+1. body
+2. common Classes
+2. header 
+3. navigation / .navbar
+4. sections
+
+NOTE: Every section is commented before starting.
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body 		:		font-family : ''Source Sans Pro', sans-serif'
+Paragraph	:		font-family : ''Source Sans Pro', sans-serif'
+Input, 
+textarea,
+title	:		font-family : 'Raleway, sans-serif'  +   font-family: 'Tangerine', cursive;
+
+
+# [Headings]
+
+h1,
+.h1 	font-size: 48px
+
+h2,
+.h2     font-size: 42px
+
+h3,
+.h3     font-size: 36px
+
+h4,
+.h4     font-size: 32px
+
+h5,
+.h5     font-size: 28px
+
+h6,
+.h6     font-size: 24px
+
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small   
+		
+		font-size: 20px
+
+-------------------------------------------------------------------*/
+/*..... MAIN TITLE ......*/
+
+.main-title{ text-align:center;}
+.main-title span{ font-size:100px; font-family: 'Tangerine', cursive;}
+.main-title h1{ background: image-url('heading-dark.png') no-repeat center 80px; letter-spacing: 4px; padding: 0 0 70px 0; margin: -6px 0 0 0;}
+.main-title p{width: 80%; display: inline-block;}
+
+.main-title-white{ text-align:center;}
+.main-title-white span{ font-size:100px; font-family: 'Tangerine', cursive; color:#fff;}
+.main-title-white h1{ background: image-url('heading-light.png') no-repeat center 80px; letter-spacing: 4px; padding: 0 0 70px 0; margin: -6px 0 0 0; color:#fff;}
+.main-title-white p{width: 80%; display: inline-block;}
+
+.back{ background:#f9f8f7;}
+
+/*..... SERVICES ......*/
+
+.services{ padding:120px 0;}
+.services .serv-main-sec{ margin:85px 0 0 0;}
+.services .service-sec-top-bg{ background:image-url('service-top.png') no-repeat; height: 32px; background-size: 100%;}
+.services .service-sec-bottom-bg{ background:image-url('service-bottom.png') no-repeat; height: 32px; background-size: 100%;}
+.services .service-sec{ border-right: 4px double #e4e4e4; border-left: 4px double #e4e4e4; padding:28px 20px; text-align: center;}
+.services .service-sec h6{     margin: 36px 0 0 0;}
+.services .service-sec p{ margin: 5px 0 0 0;}
+.services .service-sec a{ margin: 32px 0 0 0; background-color: #fff; border: solid 1px #dbdbdb; color: #5d5d5d; text-transform: uppercase; font-size: 14px;
+ padding: 10px 20px; display: inline-block;}
+ .services .service-sec a:hover{ background:#000; color:#fff; border:solid 1px #000;}
+.services .service-sec i{ font-size: 70px; border-radius: 100%; width: 140px; height: 140px; padding: 37px; display: inline-block;}
+
+.services .serv-main-sec:hover .service-sec-top-bg{height:32px; background-size:100%;}
+.services .serv-main-sec:hover .service-sec-bottom-bg{height:32px; background-size:100%;}
+.services .serv-main-sec:hover .service-sec{ border-right: 4px double #fff; border-left: 4px double #fff; color:#fff;}
+.services .serv-main-sec:hover .service-sec h6{ margin: 36px 0 0 0;}
+.services .serv-main-sec:hover .service-sec p{ margin: 5px 0 0 0;}
+.services .serv-main-sec:hover .service-sec a{ border: solid 1px #fff; }
+.services .serv-main-sec:hover .service-sec a:hover{ border: solid 1px #000; }
+.services .serv-main-sec:hover .service-sec i{ font-size: 70px; background:#fff; border-radius: 100%; width: 140px; height: 140px; padding: 37px; display: inline-block; }
+
+.dark-bg{ background:#f9f8f7;}
+
+/*..... BUTTONS ......*/
+.white-btn{ background: #fff; font-size: 15px; color: #5d5d5d; text-transform: uppercase; font-weight: 500; font-family: 'Raleway', sans-serif; padding: 20px 44px;
+ border-radius: 5px; display: inline-block; }
+.white-btn:hover{color:#fff;}
+
+/*..... Today Special ......*/
+.today-special{ background: #EFEFEF;}
+.today-special-detail{ padding:120px 0; background:image-url('food-salad.jpg') no-repeat 12px bottom; background-color:#fff; text-align:center;}
+.today-special-detail .main-sec{ width:75%; display: inline-block; padding:35px; margin:0 0 25px 0;}
+.today-special-detail .main-sec .detail{    background: #fff; float: left; width: 520px; padding: 40px 45px; position: absolute; margin: 0 0 0 -105px;
+ box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.3);}
+.today-special-detail .main-sec .detail span.title{ font-family: 'Tangerine', cursive; font-size:70px; padding: 0 0 70px 0;
+ background: image-url('heading-dark.png') no-repeat center 90px;}
+ .today-special-detail .main-sec .detail p { margin:60px 0 0 0; font-size:300;}
+.today-special-detail .main-sec .image{float: right; margin:-64px 0 0 0;}
+.today-special-detail .main-sec .image img{ width:auto; width:460px;}
+
+
+/*..... SERVICES TWO ......*/
+.services-two{ padding:120px 0;}
+.services-two .serv-main-sec{margin:85px 0 0 0;}
+.services-two .serv-main-sec .service-sec{ text-align:center;}
+.services-two .serv-main-sec .service-sec .detail{margin: 36px 0 0 0;}
+.services-two .serv-main-sec .service-sec .detail p{margin:8px 0 0 0;}
+.services-two .serv-main-sec .service-sec .detail a{border: solid 1px #dbdbdb; color: #5d5d5d; display: inline-block; margin: 35px 0 0 0; padding: 13px 25px;    font-family: 'Raleway', sans-serif; text-transform: uppercase; font-size: 12px; background:#fff;}
+.services-two .serv-main-sec .service-sec .detail a:hover{color: #fff;}
+
+
+body{
+	background:#fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	color:#222;
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+
+h1{
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	font-size:48px;
+	text-transform:uppercase; 
+}
+h2{
+	font-weight: 700;
+	font-size:42px;
+	font-family: 'Raleway', sans-serif;
+	color:#222222;
+}
+h3{
+	font-weight: 300;
+	font-size:36px;
+	font-family: 'Raleway', sans-serif;
+}
+h4{
+	
+	font-weight: 600;
+	font-size:32px;
+	font-family: 'Raleway', sans-serif;
+}
+h5{
+	font-weight:700;
+	font-size:28px;
+	font-family: 'Raleway', sans-serif;
+}
+h6{ 
+	font-weight: 600;
+	font-size:24px;
+	font-family: 'Raleway', sans-serif;
+}
+p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:400;
+	font-size:20px;
+	line-height: 27px;
+}
+
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+a .img{
+	border:none;
+
+}
+a{transition: background-color 0.5s ease; transition: color 1s; -webkit-transition: color 1s; -o-transition: .5s; -ms-transition: .5s; -moz-transition: .5s; -webkit-transition: .5s; transition: .5s;}
+a:hover {transition: background-color 0.5s ease; }
+img{ width:100%;}
+img:hover {transition: background-color 0.5s ease; }
+.clear{
+	clear:both;
+}
+.height5{	height:5px; }
+.height10{	height:10px; }
+.height15{	height:15px; }
+.height20{ 	height:20px; }
+.height25{	height:25px; }
+.height30{	height:30px; }
+.height35{	height:35px; }
+:focus{ outline:none;}
+
+
+
+/*..... HEADER ......*/
+
+.header .logo{ width: 160px; float: left; margin: 14px 0px 0 0; padding: 0 15px;}
+.header .nav{ float:left; margin:0 0 0 0;}
+.header .nav ul li{ float:left;}
+.header .nav ul li a{ color: #141414; text-transform: uppercase; font-weight: 400; font-size: 16px; font-family: 'Raleway', sans-serif; border-left: solid 1px #cccccc; padding: 26px 30px; line-height: 70px;}
+
+
+
+.header .nav ul li:last-child a{ border-right: solid 1px #cccccc;}
+.header .get-touch{ float:right;}
+.header .get-touch li{ float:left;}
+.header .get-touch li a{ text-transform: uppercase; font-size: 18px; padding: 22px 25px; float: left;}
+.header .get-touch li.book-table a{ color:#fff; background:#0a1d3b; font-weight:500; line-height: 26px; font-family: 'Raleway', sans-serif;}
+.header .get-touch li.book-table a span{ float:left;}
+.header .get-touch li.book-table a:hover{background:#022863;}
+.header .get-touch li.book-table i{color:#fff; margin:-2px 0 0 115px; float: right; font-size: 26px;}
+
+.header .get-touch li.contact-no i{ margin: 0px 15px 0 0; float: left; font-size: 26px;}
+.header .get-touch li.contact-no a{ font-size:20px;}
+.header .cart-button{color: #fff; padding: 0 26px; float: left;}
+.header .cart-button i{ color:#fff;    font-size: 34px;    line-height: 70px;}
+.header .shop-bag li.close-bag { cursor: pointer;}
+.header .shop-bag li.close-bag a{ padding:0 26px;}
+.header .shop-bag li.open-bag { background: #fff; display: none; position: absolute; margin: 70px 0 0 0; right: 0; width: 345px; padding:0 20px 20px 20px;    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);}
+.header ul.shop-bag { float: right;}
+.header .shop-bag .num{position: absolute; margin: 12px 0 0 24px; float: right; color: #222; background-color: #fff; border-radius: 100%; width: 20px; height: 20px; top: 0; padding: 2px 0 0 0; font-size: 12px; text-align: center;}
+.header .shop-bag .cart-food{ border-bottom: solid 1px #d1d1d1; float: left; width: 100%; padding: 20px 0 20px 0;}
+.header .shop-bag .cart-food .detail{    float: left;}
+.header .shop-bag .cart-food .detail img{ float:left; width:62px;}
+.header .shop-bag .cart-food .detail .text{    float: left; margin: 0 0 0 15px; width: 190px;}
+.header .shop-bag .cart-food .detail .text a{ text-transform: uppercase; font-weight: 600; font-size: 18px; color: #222;}
+.header .shop-bag .cart-food .detail .text p{ color: #666666; font-size: 14px;}
+.header .shop-bag .cart-food a.cross{float: right; margin: 15px 0 0 0;}
+.header .shop-bag .cart-food a.cross i{font-size: 26px; color: #777;}
+.header .shop-bag .cart-food a.cross i:hover{color: #000;}
+.header .shop-bag .sub-total{ margin: 30px 0 0 0; float: left; width: 100%;}
+.header .shop-bag .sub-total span{ font-size:16px; color:#636363; float: right;}
+.header .shop-bag .sub-total span strong{ color:#222; margin: 0 0 0 8px;}
+.header .shop-bag .sub-total .buttons{    float: left; width: 100%; margin: 14px 0 0 0;}
+.header .shop-bag .sub-total a{ font-size:13px; width: 48%; float: left; border-radius: 5px; text-align: center; color: #fff; text-transform: uppercase; padding: 11px 0;}
+.header .shop-bag .sub-total a.view-cart{ background:#bcbcbc;}
+.header .shop-bag .sub-total a.check-out{ background:#222; float:right;}
+
+
+
+
+
+/*..... HEADER TWO ......*/
+
+.header-two .logo2{ width:158px; float:left; margin:25px 26px 0 0;}
+.header-two .logo-dark{ display:none;}
+.header-two .nav{ float:left;}
+.header-two .nav ul li{ float:left;}
+.header-two .nav ul li a{ color: #fff; text-transform: uppercase; font-weight: 400; font-size: 14px; font-family: 'Raleway', sans-serif; padding: 0px 0;
+ margin: 0 14px; line-height: 102px;}
+.header-two .nav ul li.select-item a{ color: #FFFFFF; border-bottom: solid 1px #fff;}
+.header-two .get-touch{ float:right; margin:38px 0 0 0;}
+.header-two .get-touch li{ float:left;}
+.header-two .cont-right{ float:right;}
+.header-two .social-icons{ float:left; margin:40px 8px 0 0;}
+.header-two .social-icons li{ float:left; margin: 0 5px;}
+.header-two .social-icons li a{color:#fff; font-size:20px;}
+.header-two .social-icons li a:hover{color:#e9b947;}
+.header-two .get-touch li a{ text-transform: uppercase; font-size: 18px; padding:0px 18px; float: left;}
+.header-two .get-touch li.book-table a{ color:#fff; background:#0a1d3b; font-weight:500; line-height: 26px; font-family: 'Raleway', sans-serif;}
+.header-two .get-touch li.book-table a span{ float:left;}
+.header-two .get-touch li.book-table a:hover{background:#022863;}
+.header-two .get-touch li.book-table i{color:#fff; margin:-2px 0 0 115px; float: right; font-size: 26px;}
+.header-two .get-touch li.contact-no i{ margin: 0px 15px 0 0; float: left; font-size: 26px;}
+.header-two .get-touch li.contact-no a{ font-size:20px; color:#fff;}
+.header-two .cart-button{ color: #fff; padding: 0 0; float: left;}
+.header-two .cart-button i{ color:#fff; font-size: 28px; line-height: 98px;}
+.header-two .shop-bag li.close-bag { cursor: pointer;}
+.header-two .shop-bag li.close-bag a{ padding:0 0;}
+.header-two .shop-bag li.open-bag { background: #fff; display: none; position: absolute; margin:70px 0 0 -305px; width: 345px; padding:0 20px 20px 20px;}
+.header-two ul.shop-bag { float: right;}
+.header-two .shop-bag .num{position: absolute; margin:30px 0 0 22px; float: right; color: #222; background-color: #fff; border-radius: 100%; width: 20px; height: 20px; top: 0; padding: 2px 0 0 0; font-size: 12px; text-align: center;}
+.header-two .shop-bag .cart-food{ border-bottom: solid 1px #d1d1d1; float: left; width: 100%; padding: 20px 0 20px 0;}
+.header-two .shop-bag .cart-food .detail{    float: left;}
+.header-two .shop-bag .cart-food .detail img{ float:left; width:62px;}
+.header-two .shop-bag .cart-food .detail .text{    float: left; margin: 0 0 0 15px; width: 190px;}
+.header-two .shop-bag .cart-food .detail .text a{ text-transform: uppercase; font-weight: 600; font-size: 18px; color: #222;}
+.header-two .shop-bag .cart-food .detail .text p{ color: #666666; font-size: 14px;}
+.header-two .shop-bag .cart-food a.cross{float: right; margin: 15px 0 0 0;}
+.header-two .shop-bag .cart-food a.cross i{font-size: 26px; color: #777;}
+.header-two .shop-bag .cart-food a.cross i:hover{color: #000;}
+.header-two .shop-bag .sub-total{ margin: 30px 0 0 0; float: left; width: 100%;}
+.header-two .shop-bag .sub-total span{ font-size:16px; color:#636363; float: right;}
+.header-two .shop-bag .sub-total span strong{ color:#222; margin: 0 0 0 8px;}
+.header-two .shop-bag .sub-total .buttons{    float: left; width: 100%; margin: 14px 0 0 0;}
+.header-two .shop-bag .sub-total a{ font-size:13px; width: 48%; float: left; border-radius: 5px; text-align: center; color: #fff; text-transform: uppercase; padding: 11px 0;}
+.header-two .shop-bag .sub-total a.view-cart{ background:#bcbcbc;}
+.header-two .shop-bag .sub-total a.check-out{ background:#222; float:right;}
+
+
+
+
+.wave{ background:image-url('wave.png') repeat-x; height:46px; position: relative; z-index: 100; margin: -10px 0 0 0;}
+.arrow-scroll {}
+.arrow-scroll img{ width:43px; height:36px;}
+.scroll-down{ position: absolute; left: 49.2%; bottom:110px; z-index: 5555;}
+.scroll-down.bounce { //bounce animation position:relative; //top:1em; Transform: translateY(4em); animation-name: bounce; animation-timing-function: ease-in;		animation-duration:0.5s; animation-iteration-count: infinite; animation-direction: alternate;}
+}
