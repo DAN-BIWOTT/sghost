@@ -1,3 +1,21 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+canvas{
+   background-image: url('banenr-img1-662f4dba9df25008127699a33fa2138418e8550da0e5ee4cd40440dab2a59bcf.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+#code,h2 {
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+#code { font-size: 3.5em; }
+h2 {
+  color: #888;
+  font-size: 2em;
+}

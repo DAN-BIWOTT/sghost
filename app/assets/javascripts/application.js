@@ -26,6 +26,7 @@
 //= require jquery-ui-1.10.3.custom
 //
 //= require custom
+//= require home
 //
 //= require rails-ujs
 //= require activestorage
