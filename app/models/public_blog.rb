@@ -1,0 +1,2 @@
+class PublicBlog < ApplicationRecord
+end

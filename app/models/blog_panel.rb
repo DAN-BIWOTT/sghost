@@ -1,0 +1,2 @@
+class BlogPanel < ApplicationRecord
+end

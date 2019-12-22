@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Btitle:</strong>
+  <%= @blog_panel.btitle %>
+</p>
+
+<p>
+  <strong>Bimage:</strong>
+  <%= @blog_panel.bimage %>
+</p>
+
+<p>
+  <strong>Bmessage:</strong>
+  <%= @blog_panel.bmessage %>
+</p>
+
+<%= link_to 'Edit', edit_blog_panel_path(@blog_panel) %> |
+<%= link_to 'Back', blog_panels_path %>

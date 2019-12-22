@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @public_blog.comments %>
+</p>
+
+<p>
+  <strong>Primatename:</strong>
+  <%= @public_blog.primateName %>
+</p>
+
+<%= link_to 'Edit', edit_public_blog_path(@public_blog) %> |
+<%= link_to 'Back', public_blogs_path %>

@@ -10,6 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_12_22_051009) do
+
+  create_table "blog_panels", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "btitle"
+    t.string "bimage"
+    t.text "bmessage"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "public_blogs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "comments"
+    t.string "primateName"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

@@ -1,0 +1,32 @@
+<%= form_with(model: blog_panel, local: true) do |form| %>
+  <% if blog_panel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(blog_panel.errors.count, "error") %> prohibited this blog_panel from being saved:</h2>
+
+      <ul>
+      <% blog_panel.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :btitle %>
+    <%= form.text_area :btitle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bimage %>
+    <%= form.text_field :bimage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bmessage %>
+    <%= form.text_area :bmessage %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+<nav class="navbar bg-primary">
+  <h1 class="navbar-brand">Home</h1>
+</nav>
+<table class="table">
+  <thead class="bg-success">
+    <tr>
+      <th>Blog Title</th>
+      <th>Blog Image</th>
+      <th>Blog Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blog_panels.each do |blog_panel| %>
+      <tr>
+        <td><%= blog_panel.btitle %></td>
+        <td><%= blog_panel.bimage %></td>
+        <td><%= blog_panel.bmessage %></td>
+        <td><%= link_to 'Show', blog_panel %></td>
+        <td><%= link_to 'Edit', edit_blog_panel_path(blog_panel) %></td>
+        <td><%= link_to 'Destroy', blog_panel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Blog Panel', new_blog_panel_path %>
