@@ -27,6 +27,7 @@
 //
 //= require custom
 //= require home
+//= require detailed
 //
 //= require rails-ujs
 //= require activestorage
