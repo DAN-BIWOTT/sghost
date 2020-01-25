@@ -158,17 +158,10 @@
 						<div class="col-md-6">
 							<div class="story-detail">
 							<div class="main-title">
-								<span>From Blog</span>
-								<h2>The brain's subtle art of deception.</h2>
+                                <span>From Blog</span>
+								<h2><%= @blog.btitle %></h2>
 							</div>
-							<p>computer science should be considered an art and not more so a science, yes, 
-                                there are some aspects that fall under strict rules when building especially in machine 
-                                learning, but the bulk of programming is diverse, relative even. There isn't a single way 
-                                of solving a problem. It's art. It's the mark up of the universe. We can map our minds using code, 
-                                show the world how we think ,how we come up with solutions, code is the portal to a person's mind. It's 
-                                chess on keystrokes, graffiti of the blue-prints of the mind. Code is a spirit that holds just as much power 
-                                as any other metaphysical being,
-                                 code isn't love or nature,She's a puzzle, wrapped in a mystery inside an enigma</p>
+							<p><%= @blog.bmessage %></p>
                 <%= link_to('view more stories',public_blogs_path,class: :"full-story") %>
 							</div>
 						</div>
@@ -189,84 +182,6 @@
 <%= render 'h_partials/footer' %>
 <a href="#0" class="cd-top"></a>
   </div>
-<!-- Revolution Slider -->
-<script type="text/javascript">
-jQuery('.tp-banner').show().revolution(
-{
-dottedOverlay:"none",
-delay:16000,
-startwidth:1170,
-startheight:900,
-hideThumbs:200,
-
-thumbWidth:100,
-thumbHeight:50,
-thumbAmount:5,
-
-navigationType:"nexttobullets",
-navigationArrows:"solo",
-navigationStyle:"preview",
-
-touchenabled:"on",
-onHoverStop:"on",
-
-swipe_velocity: 0.7,
-swipe_min_touches: 1,
-swipe_max_touches: 1,
-drag_block_vertical: false,
-
-parallax:"mouse",
-parallaxBgFreeze:"on",
-parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
-
-keyboardNavigation:"off",
-
-navigationHAlign:"center",
-navigationVAlign:"bottom",
-navigationHOffset:0,
-navigationVOffset:20,
-
-soloArrowLeftHalign:"left",
-soloArrowLeftValign:"center",
-soloArrowLeftHOffset:20,
-soloArrowLeftVOffset:0,
-
-soloArrowRightHalign:"right",
-soloArrowRightValign:"center",
-soloArrowRightHOffset:20,
-soloArrowRightVOffset:0,
-
-shadow:0,
-fullWidth:"on",
-fullScreen:"off",
-
-spinner:"spinner4",
-
-stopLoop:"off",
-stopAfterLoops:-1,
-stopAtSlide:-1,
-
-shuffle:"off",
-
-autoHeight:"off",
-forceFullWidth:"off",
-
-
-
-hideThumbsOnMobile:"off",
-hideNavDelayOnMobile:1500,
-hideBulletsOnMobile:"off",
-hideArrowsOnMobile:"off",
-hideThumbsUnderResolution:0,
-
-hideSliderAtLimit:0,
-hideCaptionAtLimit:0,
-hideAllCaptionAtLilmit:0,
-startWithSlide:0,
-videoJsPath:"rs-plugin/videojs/",
-fullScreenOffsetContainer: ""
-});
-</script>
 
 <script type="text/javascript">
   var canvas = document.getElementById('nokey'),

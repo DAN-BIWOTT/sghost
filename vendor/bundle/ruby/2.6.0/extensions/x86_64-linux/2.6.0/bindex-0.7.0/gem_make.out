@@ -1,0 +1,15 @@
+current directory: /home/roman/Documents/Sites/sghost/vendor/bundle/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+/home/roman/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/roman/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200125-14884-hu8ers.rb extconf.rb
+creating Makefile
+
+current directory: /home/roman/Documents/Sites/sghost/vendor/bundle/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/roman/Documents/Sites/sghost/vendor/bundle/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.so
+
+current directory: /home/roman/Documents/Sites/sghost/vendor/bundle/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20200125-14884-s9j4sc/skiptrace

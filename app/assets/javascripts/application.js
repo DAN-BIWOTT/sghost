@@ -14,8 +14,6 @@
 //= require jquery
 //= require scroll-desktop
 //= require scroll-desktop-smooth
-//= require jquery.themepunch.revolution.min
-//= require jquery.themepunch.tools.min
 //= require parallax
 //= require countdown
 //= require owl.carousel
@@ -28,6 +26,7 @@
 //= require custom
 //= require home
 //= require detailed
+//= require revolutionSlide
 //
 //= require rails-ujs
 //= require activestorage
