@@ -42,7 +42,7 @@
                <div class="comment"><a href="#"><i class="icon-icons206"></i> <span>5 Comments</span></a></div>
                <h3 class="text-uppercase"><%= b.btitle %></h3>
                <p style="height:76px;overflow:hidden;text-overflow:ellipsis;"><%= b.bmessage %></p>
-               <td><%= link_to('Continue Reading',public_blog_detailed_url(:public_blog_id=>b.id),class: "full-story") %></td>
+               <td><%= link_to('Continue Reading',public_blog_detailed_url(:public_blog_id=>b.id),{method: :get,class: "full-story"}) %></td>
              </div>
            </div>
 

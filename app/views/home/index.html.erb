@@ -9,16 +9,15 @@
    <div class="tp-banner-container">
 		<div class="tp-banner" >
 
-	<div class="tp-bannertimer"></div>
-	</div>
-	<div class="wave"></div>
-</div>
+            <div class="tp-bannertimer">
+            </div>
+        </div>
+	        <div class="wave"></div>
+    </div>
   </canvas>
+
   <div class="wave"></div>
    <!--End Banner-->
-
-
-
    <!--Start Content-->
    <div class="content">
 
@@ -33,7 +32,7 @@
 					<div class="main-title">
 					<span>Introduction</span>
 					<h1>My Services & Interests</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor vitae accumsan. interdum hendrerit lacinia.</p>
+					<p>Hi There! My name is Biwott. Below you shall find resources and Learning Material that directly corelates to my major areas of interest. I hope you find them usefull. Email me/Call me sometime. </p>
 					</div>
 				</div>
 				</div>
@@ -47,7 +46,8 @@
 							<%= image_tag('man'); %>
 							<h6>Web Systems</h6>
 							<p>PHP, Ruby on Rails and everything in between, React JS, single Spa framework</p>
-							<a href="#">Know More</a>
+                          
+                            <%= link_to('Know More',home_websystems_path,{method: :GET}) %>
 						</div>
 						<div class="service-sec-bottom-bg"></div>
 						</div>
@@ -252,7 +252,6 @@ function randomArrayItem(arr){
 function randomNumFrom(min, max){
     return Math.random()*(max - min) + min;
 }
-console.log(randomNumFrom(0, 10));
 // Random Ball
 function getRandomBall(){
     var pos = randomArrayItem(['top', 'right', 'bottom', 'left']);
@@ -422,7 +421,7 @@ function initCanvas(){
     can_h = parseInt(canvas.getAttribute('height'));
 }
 window.addEventListener('resize', function(e){
-    console.log('Window Resize...');
+   
     initCanvas();
 });
 
@@ -435,12 +434,12 @@ goMovie();
 
 // Mouse effect
 canvas.addEventListener('mouseenter', function(){
-    console.log('mouseenter');
+    
     mouse_in = true;
     balls.push(mouse_ball);
 });
 canvas.addEventListener('mouseleave', function(){
-    console.log('mouseleave');
+    
     mouse_in = false;
     var new_balls = [];
     Array.prototype.forEach.call(balls, function(b){
@@ -454,7 +453,6 @@ canvas.addEventListener('mousemove', function(e){
     var e = e || window.event;
     mouse_ball.x = e.pageX;
     mouse_ball.y = e.pageY;
-    // console.log(mouse_ball);
 });
 
 </script>

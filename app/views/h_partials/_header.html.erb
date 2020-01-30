@@ -2,19 +2,23 @@
 
   <header class="header-two">
    <div class="container">
-      <a href="index.html"><%= image_tag('logo2.png',:class=>'logo2') %></a>
-      <a href="index.html"><%= image_tag('logo-dark.png',:class=>'logo-dark') %></a>
+      <%= link_to root_path do %>
+        <%= image_tag('logo2.png',:class=>'logo2') %>
+      <% end %>
+      <%= link_to root_path do %>
+        <%= image_tag('logo-dark.png',:class=>'logo-dark') %>
+      <% end %>
 
     <div class="cont-right">
 
             <nav class="menu-5 nav">
               <ul class="wtf-menu">
-                  <li class="select-item"><%= link_to 'Home',root_path %></li>
+                  <li class="select-item"><%= link_to 'Home',root_path,{method: :GET} %></li>
 
                     <li><a href="#">Downloads</a></li>
                     <li><a href="#">My Portfolio</a></li>
-                    <li><%= link_to 'Blog',public_blogs_path %></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><%= link_to 'Blog',public_blogs_path,{method: :GET} %></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
             </nav>
 
       <ul class="social-icons">

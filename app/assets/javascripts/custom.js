@@ -9,11 +9,11 @@ $("#menu").mmenu({
 },
 "footer": {
 "add": true,
-"title": "Copyrights 2019 Sean. all rights reserved."
+"title": "Copyrights 2019 Biwott. all rights reserved."
 },
 
 "header": {
-"title": "Sean Nairobi",
+"title": "Biwott",
 "add": true,
 "update": true
 },

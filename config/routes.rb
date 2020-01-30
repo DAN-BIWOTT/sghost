@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     resources :blog_panel
     resources :portfolio
     get 'home/index'
+    get 'home/websystems'
   root 'home#index'
 end
