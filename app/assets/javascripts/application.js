@@ -15,9 +15,6 @@
 //= require scroll-desktop
 //= require scroll-desktop-smooth
 //= require parallax
-//= require countdown
-//= require owl.carousel
-//= require cart-detail
 //= require jquery.mmenu.min.all
 //= require form-dropdown
 //= require classie
