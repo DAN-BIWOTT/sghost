@@ -8,5 +8,7 @@ Rails.application.routes.draw do
     resources :portfolio
     get 'home/index'
     get 'home/websystems'
+    get 'downloads/dowloadPage'
+    get 'downloads/sidePanel',to: 'dowloads#dowloadPage'
   root 'home#index'
 end
