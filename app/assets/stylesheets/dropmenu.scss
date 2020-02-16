@@ -2,51 +2,68 @@
 
 
 
-ul.wtf-menu li{
-	display: block;
-	position: relative;
+ul.wtf-menu li {
+  display: block;
+  position: relative;
 }
 
 
-.wtf-menu ul.submenu{
-	width: 210px;
-	padding: 0px 0px;
-	margin: 0px;
-	background: none;
-	position: absolute;
-	top: 40px;
-	padding-top: 30px;
-	left:0px;
-	display:none;
-	
-	/* 	Dropdown shadow */
-}
-.wtf-menu ul.submenu ul.submenu{padding-top: 0px;}
-.wtf-menu ul.submenu ul{
-	left: 210px;
-	top:0px;
+.wtf-menu ul.submenu {
+  width: 210px;
+  padding: 0px 0px;
+  margin: 0px;
+  background: none;
+  position: absolute;
+  top: 40px;
+  padding-top: 30px;
+  left: 0px;
+  display: none;
+
+  /* 	Dropdown shadow */
 }
 
-.wtf-menu ul.submenu li{
-	padding: 0px;
-	margin: 0px;
-	display: block;
-	float: none;
-	border-bottom: 1px solid #eee;
-	text-transform: none;
-	padding: 0 !important;
-	background:#fff;
+.wtf-menu ul.submenu ul.submenu {
+  padding-top: 0px;
 }
-.wtf-menu ul.submenu li a{ display:block;    line-height: 0;    border-left: none;}
-.wtf-menu ul.submenu li:last-child a{border-right: none;}
+
+.wtf-menu ul.submenu ul {
+  left: 210px;
+  top: 0px;
+}
+
+.wtf-menu ul.submenu li {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+  float: none;
+  border-bottom: 1px solid #eee;
+  text-transform: none;
+  padding: 0 !important;
+  background: #fff;
+}
+
+.wtf-menu ul.submenu li a {
+  display: block;
+  line-height: 0;
+  border-left: none;
+}
+
+.wtf-menu ul.submenu li:last-child a {
+  border-right: none;
+}
 
 
 /* Add arrows */
 
-ul.wtf-menu li.parent { z-index:7000;}
+ul.wtf-menu li.parent {
+  z-index: 7000;
+}
 
-.submenu .parent:hover i{ color:#fff}
-.submenu .parent i{
+.submenu .parent:hover i {
+  color: #fff
+}
+
+.submenu .parent i {
   position: absolute;
   right: 8px;
   top: 10px;
@@ -54,78 +71,102 @@ ul.wtf-menu li.parent { z-index:7000;}
   font-size: 20px;
 }
 
-ul.wtf-menu ul li.parent:after{
-	color:#999;
-	position: absolute;
-	right: 10px;
-	top:0px;
-	margin-left: 5px;
+ul.wtf-menu ul li.parent:after {
+  color: #999;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  margin-left: 5px;
 }
+
 .submenu a:hover {
-  color:#fff !important;
+  color: #fff !important;
   width: 100%;
   display: block;
   border-radius: 0px !important;
- transition: background-color 0s ease;
+  transition: background-color 0s ease;
 }
-.submenu li:last-child{ border-bottom:none !important;}
-.submenu a{border-bottom:none !important;}
+
+.submenu li:last-child {
+  border-bottom: none !important;
+}
+
+.submenu a {
+  border-bottom: none !important;
+}
+
 .submenu a.select {
-  color:#fff !important;
+  color: #fff !important;
   width: 100%;
   display: block;
   border-radius: 0px !important;
- transition: background-color 0s ease;
+  transition: background-color 0s ease;
 }
 
 
-.submenu li.select-menu a{
-    background: #F3F3F3 !important;
-    color: #222 !important;
-	padding:12px 24px !important;
+.submenu li.select-menu a {
+  background: #F3F3F3 !important;
+  color: #222 !important;
+  padding: 12px 24px !important;
 }
-.submenu li.select-menu:last-child a{
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
+
+.submenu li.select-menu:last-child a {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
-    
-.submenu li:last-child a:hover { }
-.wtf-menu ul.submenu li:hover { border-radius: 0px;}
-.wtf-menu ul.submenu li.parent:hover a{ color:#fff;}
-.wtf-menu ul.submenu li.parent ul.submenu a{ color:#222;}
-.wtf-menu ul.submenu li.parent ul.submenu a:hover{ color:#fff;}
+
+.submenu li:last-child a:hover {}
+
+.wtf-menu ul.submenu li:hover {
+  border-radius: 0px;
+}
+
+.wtf-menu ul.submenu li.parent:hover a {
+  color: #fff;
+}
+
+.wtf-menu ul.submenu li.parent ul.submenu a {
+  color: #222;
+}
+
+.wtf-menu ul.submenu li.parent ul.submenu a:hover {
+  color: #fff;
+}
 
 /* Magic happens here */
 
 ::-webkit-input-placeholder {
-   color:#fff;
+  color: #fff;
 }
 
-:-moz-placeholder { /* Firefox 18- */
-   color:#fff;  
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-   color:#fff;  
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
 }
 
-:-ms-input-placeholder {  
-   color:#fff;  
+:-ms-input-placeholder {
+  color: #fff;
 }
+
 /* Menu-1 */
 
-.menu-1 .wtf-menu li:hover > ul{
-	display:block;
-	-moz-animation: fadeInUp .3s ease-in  ;
-    -webkit-animation: fadeInUp .3s ease-in ;
-    animation:fadeInUp .3s ease-in ;
+.menu-1 .wtf-menu li:hover>ul {
+  display: block;
+  -moz-animation: fadeInUp .3s ease-in;
+  -webkit-animation: fadeInUp .3s ease-in;
+  animation: fadeInUp .3s ease-in;
 }
 
-.menu-1 .wtf-menu ul li:hover > ul{
-	display:block;
-	-moz-animation: fadeInRight .3s ease-in ;
-    -webkit-animation: fadeInRight .3s ease-in ;
-    animation:fadeInRight .3s ease-in ;
+.menu-1 .wtf-menu ul li:hover>ul {
+  display: block;
+  -moz-animation: fadeInRight .3s ease-in;
+  -webkit-animation: fadeInRight .3s ease-in;
+  animation: fadeInRight .3s ease-in;
 }
 
 
@@ -133,18 +174,18 @@ ul.wtf-menu ul li.parent:after{
 
 /* Menu-2 */
 
-.menu-2 .wtf-menu li:hover > ul{
-	display:block;
-	-moz-animation: fadeInDown .3s ease-in ;
-    -webkit-animation: fadeInDown .3s ease-in ;
-    animation:fadeInDown .3s ease-in ;
+.menu-2 .wtf-menu li:hover>ul {
+  display: block;
+  -moz-animation: fadeInDown .3s ease-in;
+  -webkit-animation: fadeInDown .3s ease-in;
+  animation: fadeInDown .3s ease-in;
 }
 
-.menu-2 .wtf-menu ul li:hover > ul{
-	display:block;
-	-moz-animation: fadeInLeft .3s ease-in ;
-    -webkit-animation: fadeInLeft .3s ease-in ;
-    animation:fadeInLeft .3s ease-in ;
+.menu-2 .wtf-menu ul li:hover>ul {
+  display: block;
+  -moz-animation: fadeInLeft .3s ease-in;
+  -webkit-animation: fadeInLeft .3s ease-in;
+  animation: fadeInLeft .3s ease-in;
 }
 
 
@@ -153,20 +194,20 @@ ul.wtf-menu ul li.parent:after{
 /* Menu-3 */
 
 
-.menu-3 .wtf-menu li:hover > ul{
-	display:block;
-	-moz-animation: fadeIn .3s ease-in ;
-    -webkit-animation: fadeIn .3s ease-in ;
-    animation:fadeIn  .3s ease-in ;
- 
+.menu-3 .wtf-menu li:hover>ul {
+  display: block;
+  -moz-animation: fadeIn .3s ease-in;
+  -webkit-animation: fadeIn .3s ease-in;
+  animation: fadeIn .3s ease-in;
+
 
 }
 
-.menu-3 .wtf-menu ul li:hover > ul{
-	display:block;
-	-moz-animation: fadeIn .3s ease-in ;
-    -webkit-animation: fadeIn .3s ease-in ;
-    animation: fadeIn .3s ease-in;
+.menu-3 .wtf-menu ul li:hover>ul {
+  display: block;
+  -moz-animation: fadeIn .3s ease-in;
+  -webkit-animation: fadeIn .3s ease-in;
+  animation: fadeIn .3s ease-in;
 }
 
 
@@ -174,20 +215,20 @@ ul.wtf-menu ul li.parent:after{
 
 /* Menu-4 */
 
-.menu-4 .wtf-menu li:hover > ul{
-	display: block;
-	-moz-animation: zoomIn .3s ease-in;
-    -webkit-animation: zoomIn .3s ease-in ;
-    animation: zoomIn .3s ease-in;
-   
+.menu-4 .wtf-menu li:hover>ul {
+  display: block;
+  -moz-animation: zoomIn .3s ease-in;
+  -webkit-animation: zoomIn .3s ease-in;
+  animation: zoomIn .3s ease-in;
+
 
 }
 
-.menu-4 .wtf-menu ul li:hover > ul{
-	display:block;
-	-moz-animation: zoomIn .3s ease-in ;
-    -webkit-animation: zoomIn .3s ease-in ;
-    animation: zoomIn .3s ease-in;
+.menu-4 .wtf-menu ul li:hover>ul {
+  display: block;
+  -moz-animation: zoomIn .3s ease-in;
+  -webkit-animation: zoomIn .3s ease-in;
+  animation: zoomIn .3s ease-in;
 }
 
 
@@ -196,70 +237,21 @@ ul.wtf-menu ul li.parent:after{
 
 /* menu-5 */
 
-.menu-5 .wtf-menu li:hover > ul{
-	display: block;
-	-moz-animation: flipInX .3s ease-in;
-    -webkit-animation: flipInX .3s ease-in ;
-    animation: flipInX .3s ease-in;
-   
+.menu-5 .wtf-menu li:hover>ul {
+  display: block;
+  -moz-animation: flipInX .3s ease-in;
+  -webkit-animation: flipInX .3s ease-in;
+  animation: flipInX .3s ease-in;
+
 
 }
 
-.menu-5 .wtf-menu ul li:hover > ul{
-	display:block;
-	-moz-animation: flipInY .3s ease-in ;
-    -webkit-animation: flipInY .3s ease-in ;
-    animation: flipInY .3s ease-in;
+.menu-5 .wtf-menu ul li:hover>ul {
+  display: block;
+  -moz-animation: flipInY .3s ease-in;
+  -webkit-animation: flipInY .3s ease-in;
+  animation: flipInY .3s ease-in;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -281,7 +273,12 @@ ul.wtf-menu ul li.parent:after{
 }
 
 @-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -298,7 +295,12 @@ ul.wtf-menu ul li.parent:after{
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
@@ -323,21 +325,29 @@ ul.wtf-menu ul li.parent:after{
 }
 
 @-webkit-keyframes flash {
-  0%, 50%, 100% {
+
+  0%,
+  50%,
+  100% {
     opacity: 1;
   }
 
-  25%, 75% {
+  25%,
+  75% {
     opacity: 0;
   }
 }
 
 @keyframes flash {
-  0%, 50%, 100% {
+
+  0%,
+  50%,
+  100% {
     opacity: 1;
   }
 
-  25%, 75% {
+  25%,
+  75% {
     opacity: 0;
   }
 }
@@ -347,7 +357,6 @@ ul.wtf-menu ul li.parent:after{
   animation-name: flash;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes pulse {
   0% {
@@ -456,36 +465,54 @@ ul.wtf-menu ul li.parent:after{
 }
 
 @-webkit-keyframes shake {
-  0%, 100% {
+
+  0%,
+  100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 }
 
 @keyframes shake {
-  0%, 100% {
+
+  0%,
+  100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: translateX(-10px);
     -ms-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     -webkit-transform: translateX(10px);
     -ms-transform: translateX(10px);
     transform: translateX(10px);
@@ -570,17 +597,23 @@ ul.wtf-menu ul li.parent:after{
     transform: scale(1);
   }
 
-  10%, 20% {
+  10%,
+  20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
-  30%, 50%, 70%, 90% {
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
-  40%, 60%, 80% {
+  40%,
+  60%,
+  80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
@@ -598,19 +631,25 @@ ul.wtf-menu ul li.parent:after{
     transform: scale(1);
   }
 
-  10%, 20% {
+  10%,
+  20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
     -ms-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
-  30%, 50%, 70%, 90% {
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: scale(1.1) rotate(3deg);
     -ms-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
-  40%, 60%, 80% {
+  40%,
+  60%,
+  80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
     -ms-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
@@ -627,8 +666,6 @@ ul.wtf-menu ul li.parent:after{
   -webkit-animation-name: tada;
   animation-name: tada;
 }
-
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes wobble {
   0% {
@@ -2964,7 +3001,8 @@ ul.wtf-menu ul li.parent:after{
     animation-timing-function: ease-in-out;
   }
 
-  20%, 60% {
+  20%,
+  60% {
     -webkit-transform: rotate(80deg);
     transform: rotate(80deg);
     -webkit-transform-origin: top left;
@@ -3011,7 +3049,8 @@ ul.wtf-menu ul li.parent:after{
     animation-timing-function: ease-in-out;
   }
 
-  20%, 60% {
+  20%,
+  60% {
     -webkit-transform: rotate(80deg);
     -ms-transform: rotate(80deg);
     transform: rotate(80deg);
@@ -3556,26 +3595,53 @@ ul.wtf-menu ul li.parent:after{
 
 
 
-.header2 .wtf-menu ul.submenu{	top: 98px;	padding-top: 0;	/* 	Dropdown shadow */}
-.header2 .nav li.parent .submenu a {  padding:12px 24px;}
-.header2 .wtf-menu ul.submenu ul.submenu{ top:0px;}
-.header2 .submenu .parent i{ top:11px;}
-
-
-
-
-
-.header-two .wtf-menu ul.submenu li{
-	padding:0 !important;
-	background:#fff;
+.header2 .wtf-menu ul.submenu {
+  top: 98px;
+  padding-top: 0;
+  /* 	Dropdown shadow */
 }
-.header-two .wtf-menu ul.submenu li a{
-	color:#222; line-height: 48px !important; margin: 0; padding: 0 14px;
+
+.header2 .nav li.parent .submenu a {
+  padding: 12px 24px;
 }
-.header-two .wtf-menu ul.submenu li a:hover{
-	color:#fff;
-	background:#f00;
+
+.header2 .wtf-menu ul.submenu ul.submenu {
+  top: 0px;
 }
-.header-two.sticky .wtf-menu ul.submenu{ top:34px;}
-.header-two .shop-bag li.open-bag { margin:85px 0 0 -305px;}
-.header-two.sticky .shop-bag li.open-bag { margin: 63px 0 0 -305px;}
+
+.header2 .submenu .parent i {
+  top: 11px;
+}
+
+
+
+
+
+.header-two .wtf-menu ul.submenu li {
+  padding: 0 !important;
+  background: #fff;
+}
+
+.header-two .wtf-menu ul.submenu li a {
+  color: #222;
+  line-height: 48px !important;
+  margin: 0;
+  padding: 0 14px;
+}
+
+.header-two .wtf-menu ul.submenu li a:hover {
+  color: #fff;
+  background: #f00;
+}
+
+.header-two.sticky .wtf-menu ul.submenu {
+  top: 34px;
+}
+
+.header-two .shop-bag li.open-bag {
+  margin: 85px 0 0 -305px;
+}
+
+.header-two.sticky .shop-bag li.open-bag {
+  margin: 63px 0 0 -305px;
+}

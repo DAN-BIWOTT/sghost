@@ -24,6 +24,8 @@
 //= require home
 //= require detailed
 //= require revolutionSlide
+//= require owl.carousel
+//= require downloadPage
 //
 //= require rails-ujs
 //= require activestorage
