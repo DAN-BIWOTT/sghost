@@ -39,73 +39,87 @@
           </form>
 
           <div class="ghost-scroll" id="style-6">
-            <li><a href="#widgets">Widgets</a></li>
-            <li><a href="#admin-panels">Admin Panels</a></li>
-            <li><a href="#help">How to use</a></li>
+            <li><a id="btn-widgets">Widgets</a></li>
+            <li><a id="btn-admin-panels">Admin Panels</a></li>
+            <li><a id="btn-help">How to use</a></li>
           </div>
         </ul>
       </div>
       <div class="ghost-body">
         <!-- Ghost Widgets -->
-        <h2 id="widgets">Ghost Widgets</h2>
-        <h3>
-          This is a collections of my widgets.
-        </h3>
-        <section>
+        <div id="widgets">
+          <h2>Ghost Widgets</h2>
+          <h3>
+            This is a collections of my widgets.
+          </h3>
+          <section>
 
-          <!-- Start Card -->
-          <div class="blog-slider">
-            <div class="blog-slider__wrp">
-              <div class="blog-slider__item">
-                <div class="blog-slider__img">
-                  <%= image_tag('dateTimePcker')%>
-                </div>
-                <div class="blog-slider__content">
-                  <span class="blog-slider_ _code">16 February 2020</span>
-                  <div class="blog-slider__title">Date Time Picker</div>
-                  <div class="blog-slider__text">
-                    A Date/Time picker is a UI component that makes it easier
-                    to help visitors to quickly select dates, times and/or
-                    date ranges on the booking, schedule, event calendar web
-                    apps.
+            <!-- Start Card -->
+            <div class="blog-slider">
+              <div class="blog-slider__wrp">
+                <div class="blog-slider__item">
+                  <div class="blog-slider__img">
+                    <%= image_tag('dateTimePcker')%>
                   </div>
-                  <a href="https://dan-biwott.github.io/" class="blog-slider__button">View Demo</a>
+                  <div class="blog-slider__content">
+                    <span class="blog-slider_ _code">16 February 2020</span>
+                    <div class="blog-slider__title">Date Time Picker</div>
+                    <div class="blog-slider__text">
+                      A Date/Time picker is a UI component that makes it easier
+                      to help visitors to quickly select dates, times and/or
+                      date ranges on the booking, schedule, event calendar web
+                      apps.
+                    </div>
+                    <a href="https://dan-biwott.github.io/" class="blog-slider__button">View Demo</a>
+                  </div>
                 </div>
+                <div class="blog-slider__pagination"></div>
               </div>
-              <div class="blog-slider__pagination"></div>
             </div>
-          </div>
-          <!-- Card End -->
+            <!-- Card End -->
+          </section>
+        </div>
+        <div id="admin-panels" style="display: none;">
+          <!-- Admin Panels -->
+          <h2>Admin Panels</h2>
+          <h3>
+            This are varios admin panel designs you may draw inspiration from.
+          </h3>
+          <section>
+            <!-- /////////////////////////// -->
+            <div class="blog-slider">
+              <div class="blog-slider__wrp">
+                <div class="blog-slider__item">
+                  <div class="blog-slider__img">
+                    <%= image_tag('admin')%>
+                  </div>
+                  <div class="blog-slider__content">
+                    <span class="blog-slider_ _code">15 Feb 2020</span>
+                    <div class="blog-slider__title">Dark Vibe</div>
+                    <div class="blog-slider__text">
+                      Dark Themed. I find it tender to the human eye. If you
+                      intend on spending a long time before a screen, She'll
+                      serve you well.
+                    </div>
+                    <a href="https://dan-biwott.github.io/" class="blog-slider__button">View Demo</a>
+                  </div>
+                </div>
+                <div class="blog-slider__pagination"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div id="how-to-use" style="display: none;">
+          <!-- how to use Panels -->
+          <h2>How to use</h2>
+          <h3>
+            This is how to use the templates I offer.
+          </h3>
+          <section>
+            <!-- ////////////HOW TO USE/////////////// -->
 
-        </section>
-        <!-- Admin Panels -->
-        <h2 id="admin-panels">Admin Panels</h2>
-        <h3>
-          This are varios admin panel designs you may draw inspiration from.
-        </h3>
-        <section>
-          <!-- /////////////////////////// -->
-          <div class="blog-slider">
-            <div class="blog-slider__wrp">
-              <div class="blog-slider__item">
-                <div class="blog-slider__img">
-                  <%= image_tag('admin')%>
-                </div>
-                <div class="blog-slider__content">
-                  <span class="blog-slider_ _code">15 Feb 2020</span>
-                  <div class="blog-slider__title">Dark Vibe</div>
-                  <div class="blog-slider__text">
-                    Dark Themed. I find it tender to the human eye. If you
-                    intend on spending a long time before a screen, She'll
-                    serve you well.
-                  </div>
-                  <a href="https://dan-biwott.github.io/" class="blog-slider__button">View Demo</a>
-                </div>
-              </div>
-              <div class="blog-slider__pagination"></div>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </div>
   </div>
