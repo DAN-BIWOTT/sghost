@@ -16,3 +16,4 @@ document.addEventListener("turbolinks:load", function () {
         $('#how-to-use').fadeIn(2000);
     })
 })
+Turbolinks.start()
