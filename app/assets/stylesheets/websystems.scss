@@ -1,8 +1,8 @@
-.customCard{
-    width: 70vw;
-    box-shadow: 0 0 2em -1em black;
-    background-color:blue;
-    margin-left: 10vh;
+.customCard {
+	width: 70vw;
+	box-shadow: 0 0 2em -1em black;
+	background-color: blue;
+	margin-left: 10vh;
 }
 
 
@@ -25,9 +25,9 @@ h3 {
 }
 
 img {
-			max-width: 100%;
-			filter: drop-shadow(1px 1px 3px $color-secondary);
-		}
+	max-width: 100%;
+	filter: drop-shadow(1px 1px 3px $color-secondary);
+}
 
 /* ----- Product Section ----- */
 .product {
@@ -42,8 +42,8 @@ img {
 
 /* ----- Photo Section ----- */
 .product__photo {
-    position: relative;
-    height: 60vh;
+	position: relative;
+	height: 60vh;
 }
 
 .photo-container {
@@ -59,15 +59,17 @@ img {
 
 .photo-main {
 	border-radius: 6px 6px 0 0;
-    background-image: image-url("3004976.jpg");
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-size: 100% 100%;
-    img{
-       transform: rotate(-35deg);
-    }
+	background-image: image-url("3004976.jpg");
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-size: 100% 100%;
+
+	img {
+		transform: rotate(-15deg);
+		width: 200px;
+	}
 
 	.controls {
 		display: flex;
@@ -85,8 +87,7 @@ img {
 		left: -3.5em;
 		top: 2em;
 		max-width: 110%;
-		filter: saturate(150%) contrast(120%) hue-rotate(10deg)
-			drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+		filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
 	}
 }
 
