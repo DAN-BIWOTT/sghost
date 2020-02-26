@@ -1,5 +1,4 @@
-document.addEventListener("turbolinks:load", function displayPage() {
-    console.log("dowload page reached")
+document.addEventListener("turbolinks:load", function () {
     $("#btn-widgets").click(function () {
         $('#admin-panels').fadeOut('slow');
         $('#how-to-use').fadeOut('slow');
