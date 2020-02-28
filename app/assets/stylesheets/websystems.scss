@@ -57,9 +57,10 @@ img {
 	box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
 }
 
-.photo-docker {
-	background-image: image-url("docker.jpg");
+
+@mixin card-bg($backgroundimg:image-url("3004976.jpg")) {
 	border-radius: 6px 6px 0 0;
+	background-image: $backgroundimg;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -91,79 +92,23 @@ img {
 		max-width: 110%;
 		filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
 	}
+}
 
+
+.photo-main {
+	@include card-bg(image-url("3004976.jpg"));
 }
 
 .photo-react {
-	background-image: image-url("react.svg");
-	border-radius: 6px 6px 0 0;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-size: 100% 100%;
-
-
-
-	img {
-		transform: rotate(-15deg);
-		width: 200px;
-	}
-
-	.controls {
-		display: flex;
-		justify-content: space-between;
-		padding: 0.8em;
-		color: #fff;
-
-		i {
-			cursor: pointer;
-		}
-	}
-
-	img {
-		position: absolute;
-		left: -3.5em;
-		top: 2em;
-		max-width: 110%;
-		filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
-	}
+	@include card-bg(image-url("reactbg.png"));
 }
 
-.photo-main {
-	border-radius: 6px 6px 0 0;
-	background-image: image-url("3004976.jpg");
-	width: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-size: 100% 100%;
+.photo-php {
+	@include card-bg(image-url("php.jpg"));
+}
 
-
-
-	img {
-		transform: rotate(-15deg);
-		width: 200px;
-	}
-
-	.controls {
-		display: flex;
-		justify-content: space-between;
-		padding: 0.8em;
-		color: #fff;
-
-		i {
-			cursor: pointer;
-		}
-	}
-
-	img {
-		position: absolute;
-		left: -3.5em;
-		top: 2em;
-		max-width: 110%;
-		filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
-	}
+.photo-docker {
+	@include card-bg(image-url("docker.jpg"));
 }
 
 .photo-album {
@@ -183,6 +128,40 @@ img {
 		padding: 7px;
 		border: 1px solid $color-secondary;
 		border-radius: 3px;
+	}
+
+	@mixin gbtn-mobile ($display) {
+		display: $display;
+		padding: 1em 3em;
+		border: none;
+		border-radius: 7px;
+		font-size: 0.8em;
+		font-weight: 700;
+		letter-spacing: 1.3px;
+		color: #fff;
+		background-color: $color-highlight;
+		box-shadow: 2px 2px 25px -7px $color-primary;
+		cursor: pointer;
+
+		&:active {
+			transform: scale(0.97);
+		}
+	}
+
+	@media screen and (max-width:800px) {
+
+		.ghostbtn-mobile {
+			@include gbtn-mobile(block);
+		}
+
+	}
+
+	@media screen and (min-width:800px) {
+
+		.ghostbtn-mobile {
+			@include gbtn-mobile(none);
+		}
+
 	}
 }
 
